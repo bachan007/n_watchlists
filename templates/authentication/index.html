@@ -1,0 +1,14 @@
+<html>
+    <body>
+        {% if user.is_authenticated %}
+        <h3>hello {{u_name}}</h3>
+        <button type="submit"><a href='signout'>Logout</a></button>
+
+        {% else %}
+        please authenticate
+        <br>
+        <button type="submit"><a href='signup'>SignUp</a></button>
+        <button type="submit"><a href='signin'>Login</a></button>
+        {% endif %}
+    </body>
+</html>
